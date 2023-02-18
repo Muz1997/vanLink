@@ -10,6 +10,17 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.get('/', (req, res) => {
   res.render("home");
 });
+app.get('/blog', (req, res) => {
+  res.render("blog");
+});
+app.get('/blog_details', (req, res) => {
+  res.render("blog_detail");
+});
+
+app.get('/about', (req, res) => {
+  res.render("about");
+});
+
 
 
 app.listen(3000, () => {
