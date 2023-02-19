@@ -20,6 +20,9 @@ app.get('/blog_details', (req, res) => {
 app.get('/about', (req, res) => {
   res.render("about");
 });
+app.get('/contact', (req, res) => {
+  res.render("contact");
+});
 
 
 
