@@ -23,36 +23,28 @@
             </div>
           </div>
           <!-- form -->
-          <form action="#" class="contact-form">
+          <form method="post" class="contact-form" id="quotationForm">
             <div class="row">
               <div class="col-lg-6 col-md-6">
                 <div class="input-form">
-                  <label
-                    for="validationDefault01"
-                    class="form-label"
-                    visible="false"
-                  ></label>
+                  <label for="name" class="form-label" visible="false"></label>
                   <input
                     type="text"
                     placeholder="Name"
                     class="form-control"
-                    id="validationDefault01"
+                    id="name"
                     required
                   />
                 </div>
               </div>
               <div class="col-lg-6 col-md-6">
                 <div class="input-form">
-                  <label
-                    for="validationDefault02"
-                    class="form-label"
-                    visible="false"
-                  ></label>
+                  <label for="email" class="form-label" visible="false"></label>
                   <input
                     type="email"
                     placeholder="Email"
                     class="form-control"
-                    id="validationDefault01"
+                    id="email"
                     required
                   />
                 </div>
@@ -72,52 +64,68 @@
               </div>
               <div class="col-lg-6">
                 <div class="select-items">
-                  <select name="select" id="select1">
-                    <option value="">Type of Services</option>
-                    <option value="">Urgent Delivery Services</option>
-                    <option value="">Pick Up within 90 Mins</option>
-                    <option value="">Next Day Delivery Services</option>
-                    <option value="">Long-Term Services</option>
-                    <option value="">Same Day Delivery Services</option>
-                    <option value="">Customized Requests</option>
+                  <select id="select1">
+                    <option value="Type of Services">Type of Services</option>
+                    <option value="Urgent Delivery Services"
+                      >Urgent Delivery Services</option
+                    >
+                    <option value="Pick Up within 90 Mins"
+                      >Pick Up within 90 Mins</option
+                    >
+                    <option value="Next Day Delivery Services"
+                      >Next Day Delivery Services</option
+                    >
+                    <option value="Long-Term Services"
+                      >Long-Term Services</option
+                    >
+                    <option value="Same Day Delivery Services"
+                      >Same Day Delivery Services</option
+                    >
+                    <option value="Customized Requests"
+                      >Customized Requests</option
+                    >
                   </select>
                 </div>
               </div>
               <div class="col-lg-6 col-md-6">
                 <div class="input-form">
-                  <input type="text" placeholder="City of Departure" />
+                  <input
+                    id="departureCity"
+                    type="text"
+                    placeholder="City of Departure"
+                  />
                 </div>
               </div>
               <div class="col-lg-6 col-md-6 col-sm-6">
                 <div class="input-form">
-                  <input type="text" placeholder="Postcode" />
+                  <input id="postCode" type="text" placeholder="Postcode" />
                 </div>
               </div>
               <div class="col-lg-6 col-md-6 col-sm-6">
                 <div class="input-form">
-                  <input type="text" placeholder="Weight" />
+                  <input id="weight" type="text" placeholder="Weight" />
                 </div>
               </div>
               <!-- Height Width length -->
               <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="input-form">
-                  <input type="text" placeholder="Height" />
+                  <input id="height" type="text" placeholder="Height" />
                 </div>
               </div>
               <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="input-form">
-                  <input type="text" placeholder="Width" />
+                  <input id="width" type="text" placeholder="Width" />
                 </div>
               </div>
               <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="input-form">
-                  <input type="text" placeholder="length" />
+                  <input id="length" type="text" placeholder="length" />
                 </div>
               </div>
               <!--Van Type-->
               <div class="col-lg-12">
                 <div class="select-items">
-                  <select name="select" id="select1">
+                  <select id="select2">
                     <option value="">Type of Vehicle</option>
                     <option value="Bike">Bike</option>
                     <option value="Car">Car</option>
@@ -153,7 +161,7 @@
                             </div> -->
               <!-- Button -->
               <div class="col-lg-12">
-                <button name="submit" class="submit-btn">
+                <button type="submit" name="submit" class="submit-btn">
                   Request a Quote
                 </button>
               </div>
